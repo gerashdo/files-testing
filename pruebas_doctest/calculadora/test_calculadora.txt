@@ -1,0 +1,173 @@
+Este método realiza la suma de dos operandos
+>>> from calculadora import Calculadora
+>>> calc = Calculadora()
+
+>>> calc.suma(2, 2)
+4
+
+>>> calc.suma(5, 20)
+25
+
+>>> calc.suma(0, 1)
+1
+
+>>> calc.suma(4, -1)
+'Solo numeros positivos'
+
+>>> calc.suma(4.5, -1)
+'Solo numeros enteros'
+
+>>> calc.suma('x', -1)
+'Solo numeros'
+
+>>> calc.suma('x', 'x')
+'Solo numeros'
+
+>>> calc.suma('x', 5)
+'Solo numeros'
+
+
+Pruebas para resta
+>>> calc.resta(0, 0)
+0
+
+>>> calc.resta(0, 1)
+-1
+
+>>> calc.resta(1, 0)
+1
+
+>>> calc.resta(15, 3)
+12
+
+>>> calc.resta(15, -3)
+'Solo numeros positivos'
+
+>>> calc.resta(4.5, -1)
+'Solo numeros enteros'
+
+>>> calc.resta('x', -1)
+'Solo numeros'
+
+>>> calc.resta('x', 'x')
+'Solo numeros'
+
+>>> calc.resta('x', 5)
+'Solo numeros'
+
+
+Pruebas para multiplicacion
+>>> calc.multiplica(0, 0)
+0
+
+>>> calc.multiplica(0, 1)
+0
+
+>>> calc.multiplica(1, 0)
+0
+
+>>> calc.multiplica(6, 9)
+54
+
+>>> calc.multiplica(10, -3)
+-30
+
+>>> calc.multiplica(-10, -3)
+30
+
+>>> calc.multiplica(-10, 3)
+-30
+
+>>> calc.multiplica(4.5, -1)
+'Solo numeros enteros'
+
+>>> calc.multiplica('x', -3)
+'Solo numeros'
+
+>>> calc.multiplica('x', 'x')
+'Solo numeros'
+
+>>> calc.multiplica('x', 10)
+'Solo numeros'
+
+
+Pruebas para division
+>>> calc.divide(0, 0)
+'Indefinido'
+
+>>> calc.divide(0, 1)
+0
+
+>>> calc.divide(1, 0)
+'Indefinido'
+
+>>> calc.divide(4, 5)
+0.8
+
+>>> calc.divide(10, 5)
+2
+
+>>> calc.divide(-30, -3)
+10
+
+>>> calc.divide(-30, 3)
+-10
+
+>>> calc.divide(30, -3)
+-10
+
+>>> calc.divide(5.5, -1)
+'Solo numeros enteros'
+
+>>> calc.divide('x', -3)
+'Solo numeros'
+
+>>> calc.divide('x', 'x')
+'Solo numeros'
+
+>>> calc.divide('x', 10)
+'Solo numeros'
+
+
+Pruebas para potencia
+>>> calc.potencia(0, 0)
+'Indefinido'
+
+>>> calc.potencia(0, 1)
+0
+
+>>> calc.potencia(0, 5)
+0
+
+>>> calc.potencia(1, 0)
+1
+
+>>> calc.potencia(11, 0)
+1
+
+>>> calc.potencia(4, 5)
+1024
+
+>>> calc.potencia(10, 2)
+100
+
+>>> calc.potencia(2, -2)
+0.25
+
+>>> calc.potencia(-2, -2)
+0.25
+
+>>> calc.potencia(-2, 2)
+4
+
+>>> calc.potencia(2.5, 2)
+6.25
+
+>>> calc.potencia('x', -3)
+'Solo numeros'
+
+>>> calc.potencia('x', 'x')
+'Solo numeros'
+
+>>> calc.potencia('x', 10)
+'Solo numeros'

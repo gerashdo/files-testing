@@ -1,0 +1,45 @@
+Conjunto de pruebas para la app de Edades
+
+>>> from edades import edad
+
+>>> edad(-2)
+'No existes'
+
+>>> edad(0)
+'Eres niño'
+
+>>> edad(8)
+'Eres niño'
+
+>>> edad(13)
+'Eres niño'
+
+>>> edad(14)
+'Eres adolescente'
+
+>>> edad(17)
+'Eres adolescente'
+
+>>> edad(18)
+'Eres adulto'
+
+>>> edad(40)
+'Eres adulto'
+
+>>> edad(65)
+'Eres adulto'
+
+>>> edad(66)
+'Eres adulto mayor'
+
+>>> edad(90)
+'Eres adulto mayor'
+
+>>> edad(121)
+'Eres Mumm-Ra'
+
+>>> edad('X')
+'Solo numeros'
+
+>>> edad()
+'No existes'

@@ -1,0 +1,65 @@
+Sistema para obtener el area de un circulo, cuadrado, rectangulo, triangulo, otra figura
+
+
+>>> from figuras import Figure
+>>> figura = Figure()
+
+>>> figura.square(5)
+25
+
+>>> figura.square(8)
+64
+
+>>> figura.square(-1)
+'Solo numeros positivos'
+
+>>> figura.square('x')
+'Solo numeros'
+
+>>> figura.circle(1)
+3.141592653589793
+
+>>> figura.circle(-1)
+'Solo numeros positivos'
+
+>>> figura.circle('x')
+'Solo numeros'
+
+>>> figura.rectangle(1, 10)
+10
+
+>>> figura.rectangle(-1, 5)
+'Solo numeros positivos'
+
+>>> figura.rectangle('x', 2)
+'Solo numeros'
+
+>>> figura.rectangle()
+'Valores no validos'
+
+>>> figura.triangle(2, 5)
+5
+
+>>> figura.triangle(-3, -10)
+'Solo numeros positivos'
+
+>>> figura.triangle('x', 5)
+'Solo numeros'
+
+>>> figura.triangle()
+'Valores no validos'
+
+>>> figura.trapezoid(5, 6, 2)
+11
+
+>>> figura.trapezoid(-3, -10, 1)
+'Valores no validos'
+
+>>> figura.trapezoid(0, 15, 4)
+'Valores no validos'
+
+>>> figura.trapezoid('x', 5, 'x')
+'Solo numeros'
+
+>>> figura.trapezoid()
+'Valores no validos'
