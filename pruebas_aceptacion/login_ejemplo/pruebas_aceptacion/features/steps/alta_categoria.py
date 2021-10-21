@@ -13,7 +13,6 @@ def step_impl(context, boton_categoria):
 
 @given(u'hago click en el boton "{boton_agregar}"')
 def step_impl(context, boton_agregar):
-    time.sleep(5)
     context.driver.find_element_by_xpath('/html/body/div/div[3]/div/div[1]/div/ul/li/a').click()
 
 
@@ -29,5 +28,10 @@ def step_impl(context, boton_guardar):
 
 @then(u'puedo ver la categoria "{text_resultado}" en la lista de categorias')
 def step_impl(context, text_resultado):
-    results = context.driver.find_element_by_class_name("results")
-    assert results.find_element_by_link_text(text_resultado) is not None
+    results = context.driver.find_element_by_id("result_list")
+    try:
+        categoria = results.find_element_by_link_text(text_resultado)
+    except:
+        categoria = None
+        
+    assert categoria is not None
